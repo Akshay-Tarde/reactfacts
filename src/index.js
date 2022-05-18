@@ -1,17 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function ReactFacts() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <img src='./logo512.png' width="20px"/>
+        </nav>
+      </header>
+      <h1>Reasons I am excited to learn React.</h1>
+      <ol>
+      <li>Declarative</li>
+      <li>Component Based</li>
+      <li>Lots of Money involved.</li>
+      </ol>
+      <footer>
+      © 2022 Tarde development. All rights reserved.
+      </footer>
+    </div>
+  )
+}
+  
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<ReactFacts/>, document.getElementById("root"))
