@@ -26,6 +26,13 @@ code {
 
 .nav-items>li {
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+span {
+  color: #61DAFB;
 
 }
 
