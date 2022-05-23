@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -5,15 +9,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+span {
+  color: #61DAFB;
+
 }
 
-.nav {
+img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 20px 30px;
+
+  background-color: #21222A;
+}
+
+.nav-bar>h4 {
+  color: #DEEBF8;
+}
+
+.nav-bar>h3 {
+  margin-right: auto;
 }
 
 .nav-items {
@@ -22,18 +42,31 @@ code {
   padding: 10px;
 }
 
-.nav-items>li {
+/*Main Content styling*/
+
+h1 {
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.MainContent {
+  margin: 0;
+  background-color: #282D35;
+  color: #FFF;
+  height: 100vh;
+  background-image: url("./images/react-logo.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.MainContent>ul>li {
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
 
 }
 
-span {
+.MainContent>ul>li::marker {
   color: #61DAFB;
-
-}
-
-.logo {
-  width: 50px;
+  font-size: 1.4rem;
 }
